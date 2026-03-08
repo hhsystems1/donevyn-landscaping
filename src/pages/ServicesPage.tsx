@@ -54,12 +54,12 @@ const ServicesPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-earth-50">
       {/* Header */}
-      <div className="bg-gradient-to-r from-green-600 to-green-800 text-white py-16">
+      <div className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 font-heading">Our Services</h1>
-          <p className="text-xl text-green-100 max-w-3xl mx-auto">
+          <p className="text-xl text-primary-100 max-w-3xl mx-auto">
             Comprehensive lawn care and landscaping solutions tailored to your property's needs
           </p>
         </div>
@@ -70,15 +70,15 @@ const ServicesPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="bg-green-50 p-6">
-                  <service.icon className="text-green-600 mb-4" size={48} />
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
-                  <p className="text-gray-600 mb-4">{service.description}</p>
+              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                <div className="bg-primary-50 p-6">
+                  <service.icon className="text-primary-600 mb-4" size={48} />
+                  <h3 className="text-xl font-semibold text-earth-900 mb-3">{service.title}</h3>
+                  <p className="text-earth-600 mb-4">{service.description}</p>
                   <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm text-gray-700">
-                        <CheckCircle className="text-green-500 mr-2" size={16} />
+                      <li key={featureIndex} className="flex items-center text-sm text-earth-700">
+                        <CheckCircle className="text-primary-500 mr-2" size={16} />
                         {feature}
                       </li>
                     ))}
@@ -94,54 +94,54 @@ const ServicesPage = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-heading">
+            <h2 className="text-3xl md:text-4xl font-bold text-earth-900 mb-4 font-heading">
               Service Areas
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-earth-600">
               Proudly serving residential and commercial properties throughout the local area
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-green-50 p-8 rounded-lg">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Residential Services</h3>
-              <ul className="space-y-2 text-gray-700">
+            <div className="bg-primary-50 p-8 rounded-lg">
+              <h3 className="text-xl font-semibold text-earth-900 mb-4">Residential Services</h3>
+              <ul className="space-y-2 text-earth-700">
                 <li className="flex items-center">
-                  <CheckCircle className="text-green-600 mr-2" size={20} />
+                  <CheckCircle className="text-primary-600 mr-2" size={20} />
                   Single-family homes
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="text-green-600 mr-2" size={20} />
+                  <CheckCircle className="text-primary-600 mr-2" size={20} />
                   Townhouses and condos
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="text-green-600 mr-2" size={20} />
+                  <CheckCircle className="text-primary-600 mr-2" size={20} />
                   Apartment complexes
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="text-green-600 mr-2" size={20} />
+                  <CheckCircle className="text-primary-600 mr-2" size={20} />
                   HOA communities
                 </li>
               </ul>
             </div>
 
-            <div className="bg-green-50 p-8 rounded-lg">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Commercial Services</h3>
-              <ul className="space-y-2 text-gray-700">
+            <div className="bg-primary-50 p-8 rounded-lg">
+              <h3 className="text-xl font-semibold text-earth-900 mb-4">Commercial Services</h3>
+              <ul className="space-y-2 text-earth-700">
                 <li className="flex items-center">
-                  <CheckCircle className="text-green-600 mr-2" size={20} />
+                  <CheckCircle className="text-primary-600 mr-2" size={20} />
                   Office buildings
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="text-green-600 mr-2" size={20} />
+                  <CheckCircle className="text-primary-600 mr-2" size={20} />
                   Retail centers
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="text-green-600 mr-2" size={20} />
+                  <CheckCircle className="text-primary-600 mr-2" size={20} />
                   Industrial parks
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="text-green-600 mr-2" size={20} />
+                  <CheckCircle className="text-primary-600 mr-2" size={20} />
                   Public spaces
                 </li>
               </ul>
@@ -151,24 +151,24 @@ const ServicesPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-green-700 to-green-900 text-white">
+      <section className="py-16 bg-gradient-to-r from-primary-700 to-primary-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-heading">
             Ready to Get Started?
           </h2>
-          <p className="text-xl mb-8 text-green-100">
+          <p className="text-xl mb-8 text-primary-100">
             Contact us for a free consultation and estimate
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="#schedule" 
-              className="bg-white text-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 transition-colors"
+              className="bg-white text-primary-700 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
             >
               Schedule Consultation
             </a>
             <a 
               href="tel:361-935-3445" 
-              className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-800 transition-colors border-2 border-white"
+              className="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-800 transition-colors border-2 border-white"
             >
               Call 361-935-3445
             </a>

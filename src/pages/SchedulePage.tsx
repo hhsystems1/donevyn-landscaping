@@ -51,12 +51,12 @@ const SchedulePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-earth-50">
       {/* Header */}
-      <div className="bg-gradient-to-r from-green-600 to-green-800 text-white py-16">
+      <div className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 font-heading">Schedule Your Service</h1>
-          <p className="text-xl text-green-100 max-w-3xl mx-auto">
+          <p className="text-xl text-earth-300 max-w-3xl mx-auto">
             Book your lawn care service online and we'll contact you to confirm your appointment
           </p>
         </div>
@@ -64,15 +64,15 @@ const SchedulePage = () => {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {submitted ? (
-          <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-            <CheckCircle className="text-green-600 mx-auto mb-4" size={64} />
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Service Request Submitted!</h2>
-            <p className="text-gray-600 mb-6">
+          <div className="bg-primary-50 border border-primary-200 rounded-lg p-8 text-center">
+            <CheckCircle className="text-primary-600 mx-auto mb-4" size={64} />
+            <h2 className="text-2xl font-bold text-earth-900 mb-4">Service Request Submitted!</h2>
+            <p className="text-earth-600 mb-6">
               Thank you for scheduling with Donevyn's Lawn & Landscaping. We'll contact you within 24 hours to confirm your appointment and provide a detailed estimate.
             </p>
             <div className="bg-white rounded-lg p-4 text-left max-w-md mx-auto">
-              <h3 className="font-semibold text-gray-900 mb-2">What happens next?</h3>
-              <ul className="space-y-2 text-sm text-gray-600">
+              <h3 className="font-semibold text-earth-900 mb-2">What happens next?</h3>
+              <ul className="space-y-2 text-sm text-earth-600">
                 <li>• We'll review your service request</li>
                 <li>• Contact you to confirm details</li>
                 <li>• Provide a detailed estimate</li>
@@ -84,14 +84,14 @@ const SchedulePage = () => {
           <form onSubmit={handleSubmit} className="space-y-8">
             {/* Customer Information */}
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                <User className="mr-3 text-green-600" size={28} />
+              <h2 className="text-2xl font-bold text-earth-900 mb-6 flex items-center">
+                <User className="mr-3 text-primary-600" size={28} />
                 Your Information
               </h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="firstName" className="block text-sm font-medium text-earth-700 mb-2">
                     First Name *
                   </label>
                   <input
@@ -101,13 +101,13 @@ const SchedulePage = () => {
                     required
                     value={formData.firstName}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-earth-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     placeholder="John"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="lastName" className="block text-sm font-medium text-earth-700 mb-2">
                     Last Name *
                   </label>
                   <input
@@ -117,13 +117,13 @@ const SchedulePage = () => {
                     required
                     value={formData.lastName}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-earth-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     placeholder="Doe"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-earth-700 mb-2">
                     Email Address *
                   </label>
                   <input
@@ -133,13 +133,13 @@ const SchedulePage = () => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-earth-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     placeholder="john.doe@example.com"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="phone" className="block text-sm font-medium text-earth-700 mb-2">
                     Phone Number *
                   </label>
                   <input
@@ -149,7 +149,7 @@ const SchedulePage = () => {
                     required
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-earth-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     placeholder="(555) 123-4567"
                   />
                 </div>
@@ -158,14 +158,14 @@ const SchedulePage = () => {
 
             {/* Service Address */}
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                <MapPin className="mr-3 text-green-600" size={28} />
+              <h2 className="text-2xl font-bold text-earth-900 mb-6 flex items-center">
+                <MapPin className="mr-3 text-primary-600" size={28} />
                 Service Address
               </h2>
               
               <div className="space-y-4">
                 <div>
-                  <label htmlFor="address" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="address" className="block text-sm font-medium text-earth-700 mb-2">
                     Street Address *
                   </label>
                   <input
@@ -175,14 +175,14 @@ const SchedulePage = () => {
                     required
                     value={formData.address}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-earth-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     placeholder="123 Main Street"
                   />
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="city" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="city" className="block text-sm font-medium text-earth-700 mb-2">
                       City *
                     </label>
                     <input
@@ -192,13 +192,13 @@ const SchedulePage = () => {
                       required
                       value={formData.city}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-earth-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                       placeholder="Anytown"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="zipCode" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="zipCode" className="block text-sm font-medium text-earth-700 mb-2">
                       ZIP Code *
                     </label>
                     <input
@@ -208,14 +208,14 @@ const SchedulePage = () => {
                       required
                       value={formData.zipCode}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-earth-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                       placeholder="12345"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="propertySize" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="propertySize" className="block text-sm font-medium text-earth-700 mb-2">
                     Property Size *
                   </label>
                   <select
@@ -224,7 +224,7 @@ const SchedulePage = () => {
                     required
                     value={formData.propertySize}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-earth-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   >
                     <option value="">Select property size</option>
                     <option value="small">Small (Under 5,000 sq ft)</option>
@@ -238,8 +238,8 @@ const SchedulePage = () => {
 
             {/* Services Selection */}
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                <Scissors className="mr-3 text-green-600" size={28} />
+              <h2 className="text-2xl font-bold text-earth-900 mb-6 flex items-center">
+                <Scissors className="mr-3 text-primary-600" size={28} />
                 Services Needed
               </h2>
               
@@ -249,18 +249,18 @@ const SchedulePage = () => {
                     key={service.id}
                     className={`flex items-center p-4 border-2 rounded-lg cursor-pointer transition-colors ${
                       formData.services.includes(service.id)
-                        ? 'border-green-500 bg-green-50'
-                        : 'border-gray-200 hover:border-green-300'
+                        ? 'border-primary-500 bg-primary-50'
+                        : 'border-earth-200 hover:border-primary-300'
                     }`}
                   >
                     <input
                       type="checkbox"
                       checked={formData.services.includes(service.id)}
                       onChange={() => handleServiceToggle(service.id)}
-                      className="mr-3 h-5 w-5 text-green-600 focus:ring-green-500 border-gray-300 rounded"
+                      className="mr-3 h-5 w-5 text-primary-600 focus:ring-primary-500 border-earth-300 rounded"
                     />
-                    <service.icon className="mr-3 text-green-600" size={24} />
-                    <span className="font-medium text-gray-900">{service.name}</span>
+                    <service.icon className="mr-3 text-primary-600" size={24} />
+                    <span className="font-medium text-earth-900">{service.name}</span>
                   </label>
                 ))}
               </div>
@@ -268,14 +268,14 @@ const SchedulePage = () => {
 
             {/* Scheduling Preferences */}
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                <Calendar className="mr-3 text-green-600" size={28} />
+              <h2 className="text-2xl font-bold text-earth-900 mb-6 flex items-center">
+                <Calendar className="mr-3 text-primary-600" size={28} />
                 Scheduling Preferences
               </h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="preferredDate" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="preferredDate" className="block text-sm font-medium text-earth-700 mb-2">
                     Preferred Date *
                   </label>
                   <input
@@ -285,12 +285,12 @@ const SchedulePage = () => {
                     required
                     value={formData.preferredDate}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-earth-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="preferredTime" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="preferredTime" className="block text-sm font-medium text-earth-700 mb-2">
                     Preferred Time *
                   </label>
                   <select
@@ -299,7 +299,7 @@ const SchedulePage = () => {
                     required
                     value={formData.preferredTime}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-earth-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   >
                     <option value="">Select time preference</option>
                     <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
@@ -310,7 +310,7 @@ const SchedulePage = () => {
                 </div>
 
                 <div className="md:col-span-2">
-                  <label htmlFor="frequency" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="frequency" className="block text-sm font-medium text-earth-700 mb-2">
                     Service Frequency *
                   </label>
                   <select
@@ -319,7 +319,7 @@ const SchedulePage = () => {
                     required
                     value={formData.frequency}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-earth-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   >
                     <option value="">Select frequency</option>
                     <option value="one-time">One-time service</option>
@@ -332,7 +332,7 @@ const SchedulePage = () => {
               </div>
 
               <div className="mt-6">
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-earth-700 mb-2">
                   Additional Notes
                 </label>
                 <textarea
@@ -341,7 +341,7 @@ const SchedulePage = () => {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-earth-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   placeholder="Please let us know any special requirements or details about your property..."
                 />
               </div>
@@ -351,11 +351,11 @@ const SchedulePage = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-700 transition-colors"
+                className="bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-700 transition-colors"
               >
                 Schedule Service
               </button>
-              <p className="mt-4 text-sm text-gray-500">
+              <p className="mt-4 text-sm text-earth-500">
                 By submitting this form, you agree to be contacted by Donevyn's Lawn & Landscaping
               </p>
             </div>

@@ -61,7 +61,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1551410224-7036837512bb?w=800&q=80" 
+                src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=800&q=80" 
                 alt="Landscaping work" 
                 className="rounded-2xl shadow-lg w-full h-64 object-cover"
               />
@@ -113,8 +113,8 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-earth-100">
               <img 
-                src="https://images.unsplash.com/photo-1592417817098-8fd4d9d14e0c?w=400&q=80" 
-                alt="Quality service" 
+                src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=400&q=80" 
+                alt="Quality lawn service" 
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
