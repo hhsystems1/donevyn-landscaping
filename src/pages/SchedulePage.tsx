@@ -247,11 +247,11 @@ const SchedulePage = () => {
                 {services.map((service) => (
                   <label
                     key={service.id}
-                    className="flex items-center p-4 border-2 rounded-lg cursor-pointer transition-colors ${
+                    className={`flex items-center p-4 border-2 rounded-lg cursor-pointer transition-colors ${
                       formData.services.includes(service.id)
                         ? 'border-green-500 bg-green-50'
                         : 'border-gray-200 hover:border-green-300'
-                    }"
+                    }`}
                   >
                     <input
                       type="checkbox"
