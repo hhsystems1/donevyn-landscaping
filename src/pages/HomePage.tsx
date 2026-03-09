@@ -12,14 +12,17 @@ const HomePage = () => {
             src="https://images.unsplash.com/photo-1581093458791-9d15482442c4?w=1920&q=80" 
             alt="Heavy equipment landscaping" 
             className="w-full h-full object-cover"
+            loading="eager"
+            onError={(e) => {
+              (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNjAwIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iIzI3MjcyNyIvPjwvc3ZnPg==';
+            }}
           />
           <div className="absolute inset-0 bg-black/60"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent"></div>
         </div>
 
-        {/* Decorative Orange Circle */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border-2 border-primary-500/30 rounded-full pointer-events-none"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] border border-primary-500/20 rounded-full pointer-events-none"></div>
+        {/* Decorative Orange Circles - behind text */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] border-2 border-primary-500/20 rounded-full pointer-events-none z-0"></div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Logo Area */}
@@ -120,16 +123,28 @@ const HomePage = () => {
                 src="https://images.unsplash.com/photo-1575425186775-b8de9a427e67?w=400&q=80" 
                 alt="Bobcat equipment" 
                 className="rounded-xl w-full h-48 object-cover"
+                loading="lazy"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iIzI3MjcyNyIvPjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE2IiBmaWxsPSIjZmE3MzE1Ij5Cb2JjYXQ8L3RleHQ+PC9zdmc+';
+                }}
               />
               <img 
                 src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80" 
                 alt="Donevyn's truck" 
                 className="rounded-xl w-full h-48 object-cover"
+                loading="lazy"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iIzI3MjcyNyIvPjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE2IiBmaWxsPSIjZmE3MzE1Ij5UcnVjazwvdGV4dD48L3N2Zz4=';
+                }}
               />
               <img 
                 src="https://images.unsplash.com/photo-1581578731123-5d5c2e2e4b4a?w=400&q=80" 
                 alt="Fleet truck" 
                 className="rounded-xl w-full h-48 object-cover col-span-2"
+                loading="lazy"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iIzI3MjcyNyIvPjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE2IiBmaWxsPSIjZmE3MzE1Ij5GcmVldCBUcnVjazwvdGV4dD48L3N2Zz4=';
+                }}
               />
             </div>
 

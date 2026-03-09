@@ -14,12 +14,19 @@ function App() {
     const handleHashChange = () => {
       const hash = window.location.hash.slice(1) || 'home';
       setCurrentPage(hash);
+      // Scroll to top when page changes
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     handleHashChange();
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
+
+  // Also scroll to top when currentPage changes directly
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [currentPage]);
 
   const renderPage = () => {
     switch (currentPage) {
