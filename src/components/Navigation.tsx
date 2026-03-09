@@ -178,10 +178,10 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* FAB for extra options */}
+        {/* FAB for extra options - above navbar */}
         <button
           onClick={toggleMenu}
-          className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-primary-600 text-white shadow-lg shadow-primary-600/30 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-primary-500 ${
+          className={`fixed bottom-24 right-6 z-50 w-12 h-12 rounded-full bg-primary-600 text-white shadow-lg shadow-primary-600/30 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-primary-500 ${
             visible ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0'
           }`}
         >
