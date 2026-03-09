@@ -9,8 +9,8 @@ const HomePage = () => {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1581093458791-9d15482442c4?w=1920&q=80" 
-            alt="Heavy equipment landscaping" 
+            src="/land1.webp" 
+            alt="" 
             className="w-full h-full object-cover"
             loading="eager"
             onError={(e) => {
@@ -22,7 +22,8 @@ const HomePage = () => {
         </div>
 
         {/* Decorative Orange Circles - behind text */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] border-2 border-primary-500/20 rounded-full pointer-events-none z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border-2 border-primary-500/30 rounded-full pointer-events-none z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] border border-primary-500/20 rounded-full pointer-events-none z-0"></div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Logo Area */}
