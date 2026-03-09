@@ -1,232 +1,196 @@
 import React from 'react';
-import { Phone, Star, CheckCircle, Leaf, Trees, Scissors, ArrowRight, Zap } from 'lucide-react';
+import { Tractor, Ruler, ChevronRight } from 'lucide-react';
 
 const HomePage = () => {
   return (
-    <div className="bg-white">
-      {/* Hero Section */}
-      <section id="home" className="relative bg-gradient-to-br from-primary-800 via-primary-700 to-primary-900 pt-32 pb-20 sm:pt-40 sm:pb-28">
-        {/* Background Image */}
+    <div className="bg-neutral-900">
+      {/* Hero Section - Heavy Duty Style */}
+      <section id="home" className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+        {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1920&q=80" 
-            alt="Beautiful lawn" 
-            className="w-full h-full object-cover opacity-20"
+            src="https://images.unsplash.com/photo-1581093458791-9d15482442c4?w=1920&q=80" 
+            alt="Heavy equipment landscaping" 
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-primary-800/90 via-primary-700/90 to-primary-900/90"></div>
+          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent"></div>
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="animate-slide-up">
-            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-              <Zap size={16} className="text-primary-300" />
-              <span className="text-white/90 text-sm font-medium">Professional Lawn Care Services</span>
-            </div>
-            
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-white font-heading leading-tight">
-              Transform Your
-              <br />
-              <span className="text-primary-200">Outdoor Space</span>
-            </h1>
-            
-            <p className="text-lg sm:text-xl mb-8 text-white/80 max-w-2xl mx-auto font-light">
-              Premium lawn care and landscaping services that bring your vision to life
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-              <a href="#schedule" className="btn-primary group">
-                <span className="relative z-10 flex items-center">
-                  Get Free Estimate
-                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-                </span>
-              </a>
-              <a href="tel:361-935-3445" className="btn-secondary">
-                <Phone className="inline mr-2" size={20} />
-                361-935-3445
-              </a>
-            </div>
+
+        {/* Decorative Orange Circle */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border-2 border-primary-500/30 rounded-full pointer-events-none"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] border border-primary-500/20 rounded-full pointer-events-none"></div>
+
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Logo Area */}
+          <div className="mb-8">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white font-heading italic">
+              Donevyn's
+            </h2>
+            <p className="text-primary-500 text-sm uppercase tracking-widest mt-1">Lawn Care & Landscaping</p>
+          </div>
+
+          {/* Main Headline */}
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white font-heading uppercase leading-none mb-4">
+            <span className="italic">Heavy-Duty</span>
+            <br />
+            <span className="text-primary-500 italic">Landscaping</span>
+          </h1>
+          
+          <p className="text-xl sm:text-2xl text-white/80 font-medium uppercase tracking-wide mb-2">
+            Earthwork & Site Prep
+          </p>
+          
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10">
+            <a 
+              href="#services" 
+              className="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-500 transition-all hover:scale-105"
+            >
+              View Services
+            </a>
+            <a 
+              href="#schedule" 
+              className="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-500 transition-all hover:scale-105"
+            >
+              Request a Quote
+            </a>
           </div>
         </div>
-        
-        {/* Scroll indicator */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 animate-bounce hidden sm:block">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2">
-            <div className="w-1.5 h-3 bg-white/80 rounded-full"></div>
-          </div>
+
+        {/* Phone in corner */}
+        <div className="absolute top-24 right-4 sm:right-8 hidden sm:block">
+          <a href="tel:361-935-3445" className="text-white/80 text-sm font-medium hover:text-primary-400 transition-colors">
+            361-935-3445
+          </a>
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-earth-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
-            <div>
-              <img 
-                src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=800&q=80" 
-                alt="Landscaping work" 
-                className="rounded-2xl shadow-lg w-full h-64 object-cover"
-              />
-            </div>
-            <div>
-              <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">Our Work</span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-earth-900 mt-2 mb-4 font-heading">
-                Creating Beautiful Outdoor Spaces
-              </h2>
-              <p className="text-earth-600">
-                From residential lawns to commercial properties, we bring expertise and dedication to every project.
-              </p>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-white rounded-2xl p-6 text-center shadow-sm border border-earth-100">
-              <div className="text-3xl font-bold text-primary-600 mb-1">10+</div>
-              <div className="text-sm text-earth-600">Years Experience</div>
-            </div>
-            <div className="bg-white rounded-2xl p-6 text-center shadow-sm border border-earth-100">
-              <div className="text-3xl font-bold text-primary-600 mb-1">500+</div>
-              <div className="text-sm text-earth-600">Happy Clients</div>
-            </div>
-            <div className="bg-white rounded-2xl p-6 text-center shadow-sm border border-earth-100">
-              <div className="text-3xl font-bold text-primary-600 mb-1">100%</div>
-              <div className="text-sm text-earth-600">Satisfaction</div>
-            </div>
-            <div className="bg-white rounded-2xl p-6 text-center shadow-sm border border-earth-100">
-              <div className="text-3xl font-bold text-primary-600 mb-1">24/7</div>
-              <div className="text-sm text-earth-600">Support</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      {/* Services Section - Dark Cards */}
+      <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-neutral-900">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">Why Choose Us</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-earth-900 mt-3 mb-4 font-heading">
-              Excellence in Every Detail
-            </h2>
-            <p className="text-earth-600 max-w-xl mx-auto">
-              Professional lawn care with a commitment to quality and customer satisfaction
-            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white font-heading">Services</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-earth-100">
-              <img 
-                src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=400&q=80" 
-                alt="Quality lawn service" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-4">
-                  <CheckCircle className="text-primary-600" size={24} />
-                </div>
-                <h3 className="text-lg font-semibold text-earth-900 mb-2">Quality Guaranteed</h3>
-                <p className="text-earth-600 text-sm">Professional service with meticulous attention to detail.</p>
+            {/* Lawn Maintenance */}
+            <div className="bg-neutral-800 rounded-2xl p-8 text-center border border-neutral-700 hover:border-primary-500/50 transition-all group">
+              <div className="w-20 h-20 mx-auto mb-6 bg-neutral-700 rounded-full flex items-center justify-center group-hover:bg-primary-600/20 transition-colors">
+                <svg viewBox="0 0 64 64" className="w-12 h-12 text-primary-500" fill="currentColor">
+                  <path d="M8 48h48v4H8zm4-8h4v8H12zm8 0h4v8h-4zm8 0h4v8h-4zm8 0h4v8h-4zm8 0h4v8h-4zm-20-8c0-6.6 5.4-12 12-12s12 5.4 12 12h-24zm12-16c-2.2 0-4 1.8-4 4h8c0-2.2-1.8-4-4-4z"/>
+                </svg>
               </div>
+              <h3 className="text-primary-500 font-bold text-lg mb-2">Lawn Maintenance</h3>
+              <p className="text-neutral-400 text-sm">Routine care, fertilizing, aeration.</p>
             </div>
 
-            <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-earth-100">
-              <img 
-                src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&q=80" 
-                alt="Eco friendly" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-4">
-                  <Leaf className="text-primary-600" size={24} />
-                </div>
-                <h3 className="text-lg font-semibold text-earth-900 mb-2">Eco-Friendly</h3>
-                <p className="text-earth-600 text-sm">Sustainable practices that protect your lawn and environment.</p>
+            {/* Earthwork & Grading */}
+            <div className="bg-neutral-800 rounded-2xl p-8 text-center border border-neutral-700 hover:border-primary-500/50 transition-all group">
+              <div className="w-20 h-20 mx-auto mb-6 bg-neutral-700 rounded-full flex items-center justify-center group-hover:bg-primary-600/20 transition-colors">
+                <Tractor className="w-12 h-12 text-primary-500" />
               </div>
+              <h3 className="text-primary-500 font-bold text-lg mb-2">Earthwork & Grading</h3>
+              <p className="text-neutral-400 text-sm">Site prep, land clearing, trenching.</p>
             </div>
 
-            <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-earth-100">
-              <img 
-                src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=400&q=80" 
-                alt="Expert team" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-4">
-                  <Star className="text-primary-600" size={24} />
-                </div>
-                <h3 className="text-lg font-semibold text-earth-900 mb-2">Expert Team</h3>
-                <p className="text-earth-600 text-sm">Certified professionals with years of experience.</p>
+            {/* Landscaping Design */}
+            <div className="bg-neutral-800 rounded-2xl p-8 text-center border border-neutral-700 hover:border-primary-500/50 transition-all group">
+              <div className="w-20 h-20 mx-auto mb-6 bg-neutral-700 rounded-full flex items-center justify-center group-hover:bg-primary-600/20 transition-colors">
+                <Ruler className="w-12 h-12 text-primary-500" />
               </div>
+              <h3 className="text-primary-500 font-bold text-lg mb-2">Landscaping Design</h3>
+              <p className="text-neutral-400 text-sm">Complete property design and installation.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Preview */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-earth-50">
+      {/* Our Gear Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-neutral-800">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">Our Services</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-earth-900 mt-3 mb-4 font-heading">
-              What We Offer
-            </h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white font-heading">Our Gear</h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="bg-white rounded-xl p-5 shadow-sm border border-earth-100">
-              <div className="w-10 h-10 bg-primary-50 rounded-lg flex items-center justify-center mb-3">
-                <Scissors className="text-primary-600" size={20} />
-              </div>
-              <h3 className="font-semibold text-earth-900 mb-1">Lawn Mowing</h3>
-              <p className="text-sm text-earth-600">Regular mowing and edging</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            {/* Equipment Images Grid */}
+            <div className="grid grid-cols-2 gap-4">
+              <img 
+                src="https://images.unsplash.com/photo-1575425186775-b8de9a427e67?w=400&q=80" 
+                alt="Bobcat equipment" 
+                className="rounded-xl w-full h-48 object-cover"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80" 
+                alt="Donevyn's truck" 
+                className="rounded-xl w-full h-48 object-cover"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1581578731123-5d5c2e2e4b4a?w=400&q=80" 
+                alt="Fleet truck" 
+                className="rounded-xl w-full h-48 object-cover col-span-2"
+              />
             </div>
 
-            <div className="bg-white rounded-xl p-5 shadow-sm border border-earth-100">
-              <div className="w-10 h-10 bg-primary-50 rounded-lg flex items-center justify-center mb-3">
-                <Trees className="text-primary-600" size={20} />
-              </div>
-              <h3 className="font-semibold text-earth-900 mb-1">Landscaping</h3>
-              <p className="text-sm text-earth-600">Custom design & installation</p>
-            </div>
-
-            <div className="bg-white rounded-xl p-5 shadow-sm border border-earth-100">
-              <div className="w-10 h-10 bg-primary-50 rounded-lg flex items-center justify-center mb-3">
-                <Leaf className="text-primary-600" size={20} />
-              </div>
-              <h3 className="font-semibold text-earth-900 mb-1">Garden Care</h3>
-              <p className="text-sm text-earth-600">Planting and maintenance</p>
-            </div>
-
-            <div className="bg-white rounded-xl p-5 shadow-sm border border-earth-100">
-              <div className="w-10 h-10 bg-primary-50 rounded-lg flex items-center justify-center mb-3">
-                <CheckCircle className="text-primary-600" size={20} />
-              </div>
-              <h3 className="font-semibold text-earth-900 mb-1">Clean-up</h3>
-              <p className="text-sm text-earth-600">Seasonal debris removal</p>
+            {/* Text Content */}
+            <div className="lg:pl-8">
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+                Industrial-Grade Equipment,<br />
+                <span className="text-primary-500">Professional Results</span>
+              </h3>
+              <p className="text-neutral-400 mb-6">
+                Our Professional Bobcat, commercial fleet, and specialized machinery means we can handle any job - from residential cleanups to large-scale commercial earthwork.
+              </p>
+              <a href="#services" className="inline-flex items-center text-primary-500 font-semibold hover:text-primary-400 transition-colors group">
+                Visit Gallery
+                <ChevronRight className="ml-1 group-hover:translate-x-1 transition-transform" size={20} />
+              </a>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="text-center mt-8">
-            <a href="#services" className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700">
-              View All Services
-              <ArrowRight className="ml-2" size={20} />
-            </a>
+      {/* Stats Bar */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-primary-600">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-3xl sm:text-4xl font-black text-white">10+</div>
+              <div className="text-primary-100 text-sm uppercase tracking-wide">Years Experience</div>
+            </div>
+            <div>
+              <div className="text-3xl sm:text-4xl font-black text-white">500+</div>
+              <div className="text-primary-100 text-sm uppercase tracking-wide">Projects Done</div>
+            </div>
+            <div>
+              <div className="text-3xl sm:text-4xl font-black text-white">100%</div>
+              <div className="text-primary-100 text-sm uppercase tracking-wide">Satisfaction</div>
+            </div>
+            <div>
+              <div className="text-3xl sm:text-4xl font-black text-white">24/7</div>
+              <div className="text-primary-100 text-sm uppercase tracking-wide">Support</div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary-800 to-primary-900">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-neutral-900">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 font-heading">
-            Ready to Transform Your Lawn?
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6 font-heading uppercase">
+            Ready To Start Your<br />
+            <span className="text-primary-500">Project?</span>
           </h2>
-          <p className="text-white/80 mb-8">
-            Get your free estimate today
+          <p className="text-neutral-400 mb-8 text-lg">
+            Get a free estimate for your landscaping or earthwork needs
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="#schedule" className="bg-white text-primary-700 px-6 py-3 rounded-xl font-semibold hover:bg-primary-50 transition-colors">
-              Schedule Service
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#schedule" className="bg-primary-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary-500 transition-all hover:scale-105">
+              Get a Quote
             </a>
-            <a href="tel:361-935-3445" className="bg-primary-700 text-white px-6 py-3 rounded-xl font-semibold border border-white/30 hover:bg-primary-600 transition-colors">
-              Call 361-935-3445
+            <a href="tel:361-935-3445" className="border-2 border-neutral-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:border-primary-500 hover:text-primary-500 transition-all">
+              361-935-3445
             </a>
           </div>
         </div>
